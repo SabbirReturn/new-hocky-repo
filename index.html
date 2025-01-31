@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/263b0d2a09.js" crossorigin="anonymous"></script>
+    <!-- Tailwind and Daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Monrope font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Customise Colour -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'title-color': '#131318',
+                'description-color': '#13131896',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        .monrope-font{
+            font-family: 'Manrope', sans-serif;
+        }
+      </style>
+</head>
+<body class="monrope-font">
+    <header class="container mx-auto">
+        <!-- Banner-Section -->
+        <div class="carousel w-full py-10 ">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="px-2 lg:ml-48 rounded-2xl" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 right-2 left-2 lg:left-48 lg:right-40 top-1/2">
+                <a href="#slide4" class="btn btn-circle text-white bg-black">❮</a> 
+                <a href="#slide2" class="btn btn-circle text-white bg-black">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="px-2 lg:ml-48 rounded-2xl" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 right-2 left-2 lg:left-48 lg:right-40 top-1/2">
+                <a href="#slide1" class="btn btn-circle text-white bg-black">❮</a> 
+                <a href="#slide3" class="btn btn-circle text-white bg-black">❯</a>
+              </div>
+          </div>
+    </header>
+    <main class="container mx-auto">
+        <!-- Hockeys Club -->
+        <section>
+            <hr class="max-w-5xl mx-auto">
+            <h1 class="text-center mt-8 text-4xl font-extrabold title-color">Professional Hockeys Club</h1>
+            <p class=" max-w-2xl mx-auto text-center text-base mt-8 font-medium">Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play. Professional competition began in North America in the United States—in Pennsylvania and Michigan—and in Canada around 1900 </p>
+            <hr class="mt-8 max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 max-w-6xl mx-auto text-center mt-8">
+                <div>
+                    <div class="radial-progress  text-red-300" style="--value:87;" role="progressbar"><p class="text-black text-xl font-extrabold">87%</p></div>
+                    <h3 class="text-xl mt-4 font-semibold">Prayer Facility</h3>
+                    <p class="px-10 lg:px-0 text-base mt-4 font-normal description-color">Products, services from HDTS are based on the requirements for  players.</p>
+                 </div>
+                <div>
+                <div class="radial-progress text-green-400" style="--value:95;" role="progressbar"><p class="text-black        text-xl font-extrabold">95%</p></div>
+                    <h3 class="text-xl mt-4 font-semibold">Experienced Coach</h3>
+                    <p class="px-10 lg:px-0 text-base mt-4 font-normal description-color">Fulfilling the duties and responsibilities of a hockey coach requires attention to detail.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-orange-300" style="--value:90;" role="progressbar"><p class="text-black text-xl font-extrabold">90%</p></div>
+                    <h3 class="text-xl mt-4 font-semibold">Senior Player</h3>
+                    <p class="px-10 lg:px-0 text-base mt-4 font-normal description-color">Senior hockey refers to amateur or semi-professional ice hockey competition.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-blue-300" style="--value:80;" role="progressbar"><p class="text-black text-xl font-extrabold">80%</p></div>
+                    <h3 class="text-xl mt-4 font-semibold">Training Ground</h3>
+                    <p class="px-10 lg:px-0 text-base mt-4 font-normal description-color">Squats, glute bridges, and lunges are good exercises to include when building a strong lower body base.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Program-Section -->
+        <section class="mt-16 px-6">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold mb-6">Program Sections</h1>
+                <p class="text-base font-medium mb-8 text-[#13131899]">The rink is divided into three sections by two blue lines. The defensive zone is where your goal is, and the opponent's goal is in the offensive zone.</p>
+            </div>
+            <hr class="mb-10 max-w-5xl mx-auto">
+            <div class="flex gap-5 flex-col lg:flex-row justify-center">
+              <div class="w-100% lg:w-4/12 rounded-3xl">
+                <div class="hero h-64 rounded-3xl" style="background-image: url(Images/2.png);">
+                  <div class="hero-overlay bg-opacity-60"></div>
+                  <div class="hero-content  text-neutral-content">
+                    <div class="max-w-md">
+                      <h1 class="text-3xl font-extrabold mb-4">Junior Program</h1>
+                      <p class="mb-5 text-base font-medium">The goals of junior hockey are to promote, develop, and administer the domestic USA Hockey program for junior-aged players, teams, and leagues.</p>
+                      <button class="btn bg-[#FF4240] border-[#FF4240]">Register Now!</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" w-100% lg:w-4/12">
+                <div class="hero h-64 rounded-3xl " style="background-image: url(Images/3.png);">
+                  <div class="hero-overlay bg-opacity-60"></div>
+                  <div class="hero-content  text-neutral-content">
+                    <div class="max-w-md">
+                      <h1 class="text-3xl font-extrabold mb-4">Teenager Program</h1>
+                      <p class="mb-5 text-base font-medium">Not only can adults learn to play hockey, but many who compete weekly at local ice rinks would say that more adults should get out and learn to play.</p>
+                      <button class="btn bg-[#FF4240] border-[#FF4240]">Register Now!</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-3xl lg:ml-72 mt-6">
+              <div class="hero lg:w-[950px] lg:h-[350px] rounded-3xl" style="background-image: url(Images/4.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content  text-neutral-content">
+                  <div class="">
+                    <h1 class="lg:px-10 text-3xl font-extrabold mb-4">Professional Program</h1>
+                    <p class="mb-5 lg:px-10 text-base font-medium">The Hockey Skating 3 course is designed for professional  skating coaches who are teaching advanced level hockey players. </p>
+                    <button class="btn bg-[#FF4240] border-[#FF4240] lg:ml-10">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <hr class="mt-20 mb-8 max-w-5xl mx-auto">
+        <!-- New Products -->
+        <section>
+          <div class="text-center">
+            <h1 class="mb-6 text-4xl font-extrabold">Our New Products</h1>
+            <p class="max-w-5xl mx-auto mb-6 text-base text-[#13131899] font-medium">Product introduction includes those decisions and activities that are necessary to present a product to its target market and begin generating income from sales of the new product.</p>
+          </div>
+          <hr class=" mb-8 max-w-5xl mx-auto">
+          <div class="flex flex-col lg:flex-row gap-6 mb-6 lg:ml-48 lg:mr-48 mx-4">
+            <div class="hero border-2 border-neutral-100 rounded-2xl">
+              <div class="hero-content flex-col lg:flex-row">
+                <img src="Images/5.png" class="h-72 w-96 lg:max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                  <div class="flex gap-6 mb-5">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                      <p>5.0</p>
+                    </div>
+                    <div class="flex items-center ">
+                      <i class="fa-regular fa-eye"></i>
+                      <p>20</p>
+                    </div>
+                    <div class="flex items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <p>200</p>
+                    </div>
+                  </div>
+                  <h1 class="mb-4 text-xl font-extrabold">World Cup Flags Football</h1>
+                  <p class="mb-5 text-base font-medium">Get ready for the Men's World Cup with these lovely country name and flag paper chains</p>
+                  <div class="flex items-center gap-4">
+                    <p class="text-lg text-[#FF4240] font-extrabold">Price - $22.00</p>
+                    <i class="fa-solid fa-truck"></i>
+                    <p class="text-base font-medium">Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero border-2 border-neutral-100 rounded-2xl ">
+              <div class="hero-content flex-col lg:flex-row">
+                <img src="Images/6.png" class="h-72 w-96 lg:max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                <div class="flex gap-6 mb-5 text-[#13131899]">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                      <p>5.0</p>
+                    </div>
+                    <div class="flex items-center ">
+                      <i class="fa-regular fa-eye"></i>
+                      <p>20</p>
+                    </div>
+                    <div class="flex items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <p>200</p>
+                    </div>
+                  </div>
+                  <h1 class="mb-4 text-xl font-extrabold">World Cup Flags Football</h1>
+                  <p class="mb-5 text-base font-medium">Get ready for the Men's World Cup with these lovely country name and flag paper chains</p>
+                  <div class="flex items-center gap-4">
+                    <p class="text-lg text-[#FF4240] font-extrabold">Price - $22.00</p>
+                    <i class="fa-solid fa-truck"></i>
+                    <p class="text-base font-medium">Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row gap-6 mb-6 lg:ml-48 lg:mr-48 mx-4">
+            <div class="hero border-2 border-neutral-100 rounded-2xl">
+              <div class="hero-content flex-col lg:flex-row">
+                <img src="Images/7.png" class="h-72 w-96 lg:max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                  <div class="flex gap-6 mb-5">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                      <p>5.0</p>
+                    </div>
+                    <div class="flex items-center ">
+                      <i class="fa-regular fa-eye"></i>
+                      <p>20</p>
+                    </div>
+                    <div class="flex items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <p>200</p>
+                    </div>
+                  </div>
+                  <h1 class="mb-4 text-xl font-extrabold">Cap For Hockeys</h1>
+                  <p class="mb-5 text-base font-medium">GNB CUSTOM EMBROIDERY LLC. Hockey Cap. Custom Embroidered 6089 Yupoong Snapback hat.</p>
+                  <div class="flex items-center gap-4">
+                    <p class="text-lg text-[#FF4240] font-extrabold">Price - $22.00</p>
+                    <i class="fa-solid fa-truck"></i>
+                    <p class="text-base font-medium">Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero border-2 border-neutral-100 rounded-2xl ">
+              <div class="hero-content flex-col lg:flex-row">
+                <img src="Images/8.png" class="h-72 w-96 lg:max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                <div class="flex gap-6 mb-5 text-[#13131899]">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                      <p>5.0</p>
+                    </div>
+                    <div class="flex items-center ">
+                      <i class="fa-regular fa-eye"></i>
+                      <p>20</p>
+                    </div>
+                    <div class="flex items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <p>200</p>
+                    </div>
+                  </div>
+                  <h1 class="mb-4 text-xl font-extrabold">World Cup Flags Football</h1>
+                  <p class="mb-5 text-base font-medium">Get ready for the Men's World Cup with these lovely country name and flag paper chains</p>
+                  <div class="flex items-center gap-4">
+                    <p class="text-lg text-[#FF4240] font-extrabold">Price - $22.00</p>
+                    <i class="fa-solid fa-truck"></i>
+                    <p class="text-base font-medium">Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row gap-6 mb-6 lg:ml-48 lg:mr-48 mx-4">
+            <div class="hero border-2 border-neutral-100 rounded-2xl">
+              <div class="hero-content flex-col lg:flex-row">
+                <img src="Images/9.png" class="h-72 w-96 lg:max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                  <div class="flex gap-6 mb-5">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                      <p>5.0</p>
+                    </div>
+                    <div class="flex items-center ">
+                      <i class="fa-regular fa-eye"></i>
+                      <p>20</p>
+                    </div>
+                    <div class="flex items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <p>200</p>
+                    </div>
+                  </div>
+                  <h1 class="mb-4 text-xl font-extrabold">World Cup Flags Football</h1>
+                  <p class="mb-5 text-base font-medium">Get ready for the Men's World Cup with these lovely country name and flag paper chains</p>
+                  <div class="flex items-center gap-4">
+                    <p class="text-lg text-[#FF4240] font-extrabold">Price - $22.00</p>
+                    <i class="fa-solid fa-truck"></i>
+                    <p class="text-base font-medium">Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero border-2 border-neutral-100 rounded-2xl ">
+              <div class="hero-content flex-col lg:flex-row">
+                <img src="Images/10.png" class=" h-72 w-96 lg:max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                <div class="flex gap-6 mb-5 text-[#13131899]">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                      <p>5.0</p>
+                    </div>
+                    <div class="flex items-center ">
+                      <i class="fa-regular fa-eye"></i>
+                      <p>20</p>
+                    </div>
+                    <div class="flex items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <p>200</p>
+                    </div>
+                  </div>
+                  <h1 class="mb-4 text-xl font-extrabold">World Cup Flags Football</h1>
+                  <p class="mb-5 text-base font-medium">Get ready for the Men's World Cup with these lovely country name and flag paper chains</p>
+                  <div class="flex items-center gap-4">
+                    <p class="text-lg text-[#FF4240] font-extrabold">Price - $22.00</p>
+                    <i class="fa-solid fa-truck"></i>
+                    <p class="text-base font-medium">Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="footer p-10 bg-[#131318] text-[#FFF] text-base-content mt-20">
+      <nav>
+        <h6 class="footer-title ml-16 lg:ml-0 text-3xl font-extrabold ">Get In Touch</h6> 
+        <p class="lg:mr-60 ml-10 lg:ml-0 mb-4 text-base font-medium text-[#FFFFFF99]">Contributions are made by a large number of volunteers at their own discretion. Edits are neither the responsibility  of the Wikimedia Foundation </p>
+        <div class="flex items-center gap-4 ml-12 lg:ml-0 text-base font-medium text-[#FFFFFF99]">
+          <i class="fa-solid fa-square-envelope"></i>
+          <p>hockeys@support.com</p>
+        </div>
+        <div class="flex items-center gap-4 ml-12 lg:ml-0 text-base font-medium text-[#FFFFFF99]">
+          <i class="fa-solid fa-phone"></i>
+          <p>(+62) 123-321-543</p>
+        </div>
+      </nav> 
+      <div class="flex flex-row lg:flex-row  lg:gap-36 ml-10 lg:ml-0">
+        <nav class="flex flex-col gap-4">
+          <h6 class="footer-title text-lg font-bold">Company</h6> 
+          <a class="link link-hover text-base font-medium text-[#FFFFFF99]">About us</a>
+          <a class="link link-hover text-base font-medium text-[#FFFFFF99] ">Leadership</a>
+          <a class="link link-hover text-base font-medium text-[#FFFFFF99]">Careers</a>
+          <a class="link link-hover text-base font-medium text-[#FFFFFF99]">News & Article</a>
+          <a class="link link-hover text-base font-medium text-[#FFFFFF99]">Legal Notice</a>
+        </nav> 
+        <nav class="flex flex-col lg:mr-64 ml-14 lg:ml-0 gap-4">
+          <h6 class="footer-title text-lg font-bold">Support</h6> 
+          <a class="link link-hover text-base font-medium text-[#FFFFFF99]">Help Center</a>
+          <a class="link link-hover text-base font-medium text-[#FFFFFF99]">FAQ</a>
+          <a class="link link-hover text-base font-medium text-[#FFFFFF99]">Ticket Support</a>
+          <a class="link link-hover text-base font-medium text-[#FFFFFF99]">Contact Us</a>
+        </nav>
+      </div> 
+      <nav class="ml-32 lg:ml-0 gap-4">
+        <h6 class="footer-title text-lg font-bold">Services</h6> 
+        <a class="link link-hover text-base font-medium text-[#FFFFFF99]">Academy</a>
+        <a class="link link-hover text-base font-medium text-[#FFFFFF99]">Group Lesson</a>
+        <a class="link link-hover text-base font-medium text-[#FFFFFF99]">Private Lesson</a>
+        <a class="link link-hover text-base font-medium text-[#FFFFFF99]">Hockeys for kids</a>
+        <a class="link link-hover text-base font-medium text-[#FFFFFF99]">Hockeys for Adult</a>
+      </nav> 
+    </footer>
+</body>
+</html>
